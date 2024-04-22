@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pix2Pix Image Translation Result</title>
+</head>
+<body>
+    <h1>Original Image</h1>
+    <img src="{{ url_for('static', filename=original_image) }}">
+    <h1>Generated Stained Image</h1>
+    <img src="{{ url_for('static', filename=generated_image) }}">
+    <h1>Predicted Cancer Percentage</h1>
+    <p>{{ cancer_percentage }}</p>
+    
+</body>
+</html>
